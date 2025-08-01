@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(360deg, rgb(42, 16, 92), rgb(0, 0, 0));
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(360deg, rgb(42, 16, 92), rgb(0, 0, 0));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card{
+    height: 320px;
+    width: 250px;
+    background: linear-gradient(360deg, rgb(100, 17, 255), rgb(157, 105, 253));
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.card img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    
+}
+h1{
+    font-size: 25px;
+    padding-top: 9px;
+}
+.card h4{
+    padding-top: 2px;
+}
+.card h5{
+    padding-bottom: 7px;
+}
+.card p {
+    width: 100%;
+    padding-top: 2px;
+    font-size: 14px;
+    text-align: center;
+    word-break: normal;
+    white-space: normal;
+    max-width: 100%;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgb(68, 25, 224); 
+    cursor: pointer;
+}
+button{
+    padding: 8px 30px;
+    border: none;
+    border-radius: 10px;
+    /* background:  linear-gradient(360deg, rgb(223, 238, 136), rgb(202, 236, 5)); */
+    background-color: rgb(11, 193, 238);
+    cursor: pointer;
+    color: black;
+    font-size: 15px;
+    margin-top: 15px;
+}
+.friend-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .friend-btn.add {
+    background-color:  #3d00e47a;
+    color: rgb(43, 255, 0);
+  }
+  
+  
+  
+  .friend-btn.remove {
+    background-color: #824dff;
+    color: white;
+  }
+  
+  .friend-btn.remove:hover {
+    background-color: #3d00e475;
+    color: rgb(255, 0, 0);
+  }
+  
